@@ -704,9 +704,12 @@ a.nav_link {
   .sliderSP {
     display: block;
   }
-
   .bottomIcon {
     width: 30%;
   }
+  .footerInfoBody {
+  width: 90%;
+  padding: 0;
+}
 
 }
