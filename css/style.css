@@ -73,7 +73,7 @@ img {
   color: #fff;
 }
 rt{
-  margin-bottom: 0;
+  line-height: 0.8em;
   font-size: 30%;
 }
 
@@ -488,7 +488,7 @@ a.nav_link {
   justify-content: center;
   text-align: center;
   width: 100%;
-  color: #fff1;
+  color: #fff;
 }
 .nav_link {
   font-size: 80%;
