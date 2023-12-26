@@ -1,0 +1,712 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif JP";
+  font-size: 100%;
+  color: #555;
+}
+
+
+/* ヘッダー */
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  background: #fff;
+  position: relative;
+}
+
+/* ロゴ回り */
+.logo {
+  margin: 2% 4%;
+  width: 45%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    }
+
+/* メイン写真の上の文字  */
+.siteName {
+  margin: 0;
+  padding: 0.5%;
+  width: 100%;
+  font-size: 80%;
+  text-align: center;
+  background: #cccc66;
+}
+
+/* ページ上部の写真 */
+.topImage {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.imageFull {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* 写真に重ねる文字 */
+/* テキスト重ね */
+.textOverrap {
+  position: relative;
+}
+.headingPage {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-size: clamp(10px , 6vw , 60px);
+  line-height: clamp(14px , 9vw , 72px);
+  color: #fff;
+}
+
+
+/* フッター */
+footer {
+  padding: 16px 16px 96px 16px;
+  background:#cccc66;
+  color: #fff;
+}
+
+.footerInfo{
+  display: flex;
+  padding: 8%;
+}
+.footerInfoBody {
+  width: 70%;
+  padding-left: 12%;
+}
+.footerInfoLogo {
+  width:15%;
+  justify-content: center;
+  padding: 4px;
+}
+
+.footerLogo {
+  width: 70%;
+  position: relative;
+  left: 0;
+}
+
+.footerInsta {
+  width: 20%;
+  position: relative;
+  right: 0;
+}
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/* 全体の囲み */
+.wrapper {
+  margin: 0 auto;
+  overflow:hidden;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.mainSection {
+  margin: 0;
+  padding: 0;
+}
+
+.sectionHeader {
+  margin: 2% 0 2%;
+  padding: 2% 0 0 0;
+}
+
+
+/************** スクロールしたらふわっと出現 **************/
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
+  
+
+/* 筆記体の見出し */
+.eachTextAnime{
+  margin-top: 4%;
+  height: auto;
+  font-family: Parisienne;
+  text-align: center;
+  vertical-align:top;
+  font-size:2.5rem;
+  color: #ff5c5c;
+}
+
+/* 筆記体の下の日本語の見出し */
+.heading {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0;
+  font-family: "Noto Serif JP";
+  font-size: 80%;
+  text-align: center;
+}
+
+/* 本文を囲むボックス */
+.lbWrapper {
+  margin: 0 auto 1rem auto;
+  padding: 1rem 0;
+  width: 80%;
+  background: #F5F5D4;
+}
+
+/*　記事本文のスタイル */
+
+.letterBody {
+  width: 60%;
+  margin: 0 auto 1.5rem auto;
+}
+
+
+/* ディナーメニューに飛ぶボタン */
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.2rem;
+}
+.more {
+  text-align:center;
+}
+  a.btn--more {
+    color: #fff;
+    background-color: #ff5c5c;
+    border-bottom: 5px solid #cf5252;
+  }
+  
+  a.btn--more:hover {
+    margin-top: 3px;
+    color: #000;
+    background: #ff5c5c;
+    border-bottom: 2px solid #cf5252;
+  }
+
+
+.headingSub {
+  margin: 1rem 0 1.2rem 0;
+  font-family: "Noto Serif JP";
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 100%;
+  line-height: 1.5rem;
+}
+
+/******************** メニューの詳細用 ********************/
+.dinnerMenu {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4%;
+  line-height: 1.5rem;
+}
+
+/* １つのメニューのボックス */
+.menuBox {
+  margin-bottom: 8px;
+  border-bottom: 1px dotted #aaa;
+}
+
+/* メニュー名 */
+.menu {
+  display: flex;
+  padding: 0 0 4px 0;
+  width:100%;
+  text-align:justify;
+  line-height: 1.2rem;
+}
+
+.menu:nth-child(n+2) {
+  margin: 8px 0;
+  padding: 24px 0 4px 0;
+  border-top: 1px dotted #aaa;
+}
+
+.menuPhoto {
+  width:30%;
+}
+
+.menuName {
+  margin-left: 2%;
+}
+
+/* メニューの説明 */
+.menuNote {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+
+/* 価格 */
+.price {
+  width: 100%;
+  text-align: right;
+  color:#ff5c5c;
+  margin-top: 4px;
+}
+
+.price:nth-child(n+2) {
+  margin-top: 0;
+}
+
+.access{
+  margin: 8px 0;
+}
+/* 地図 */
+iframe {
+  width: 100%;
+  aspect-ratio: 16/4; /* アスペクト比（縦横比）を指定 */
+}
+
+
+/* スクロールで画像を拡大 */
+.imageExpansion {
+  background-size: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 600px;
+}
+
+.topImage {
+  background: url(../images/top01.jpg) no-repeat top center;
+}
+
+.courseImage {
+  background: url(../images/course.jpg) no-repeat top center;
+  background-size: 100%;
+}
+
+.sliderSP {
+  display: none;
+}
+
+
+
+/************* slickスライドの設定 *************/
+
+.recommendMenu {
+  width: 100%;
+  margin: 0 auto 4% auto;
+}
+
+.slider img {
+  transform: scale(0.8);
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.slider .slick-center img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+ul.text {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.text li {
+  opacity: 0;
+  text-align: center;
+  animation-delay: 0.5s;
+  animation-duration: 1.0s;
+  animation-fill-mode: both;
+}
+
+.text li.slick-active {
+  animation-name: open;
+}
+
+.horizontalImage {
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+.horizontalImage::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.horizontalImage img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+}
+
+.recommendName {
+  margin: 2% 0;
+  padding: 2% 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-bottom: 1px dotted #666;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 左右ボタンスタイル DF
+-------------------------------------*/
+.slick-prev,
+.slick-next {
+    z-index:10;
+    width:auto;
+    height:auto;
+}
+.slick-next{ right:0!important; }
+.slick-prev{ left:0!important; }
+.slick-arrow{ z-index:2!important; }
+.slick-prev {left: 0;}
+.slick-next {right: 0px;}
+
+.slick-prev:before,
+.slick-next:before	{
+    color: black;
+}
+
+
+/**************** ハンバーガーメニューに関するCSS *******************/
+a.nav_link {
+  color: #666;
+  padding: 4px 4px 8px 4px;
+}
+.navList {
+  padding: 0 4px;
+}
+.current a {
+  border-bottom: 3px solid #ff5c5c;
+  border-radius: 2px;
+  color: #ff5c5c;
+}
+.header_bg {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+.header_contents {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header_nav {
+  width: 100%;
+}
+.header_nav_lists {
+  width: 100%;
+  display: flex;
+}
+
+.header_nav_lists li {
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.header_nav_lists li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.nav_link {
+  font-size: 80%;
+}
+
+.header_nav_lists li:nth-child(n+2) {
+  text-align: center;
+  border-left: 1px solid #666;
+}
+.responsive_btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 40px 0 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+/* 3本線クリック前 */
+
+.menu_line01 , .menu_line02 , .menu_line03 {
+  position: relative;
+  background: #666;
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+  margin: 4px 0;
+}
+
+/*
+  ハンバーガーメニューがクリックされたら
+  上の線を真ん中に移動させて45℃回転
+*/
+.menu_line01.open {
+  transform: rotate(45deg);
+  top: 8px;
+}
+/*
+  ハンバーガーメニューがクリックされたら
+  真ん中の線は透明化して見えないようにする
+*/
+.menu_line02.open {
+  opacity: 0;
+}
+
+/*
+  ハンバーガーメニューがクリックされたら
+  下の線は真ん中に移動させて-45℃回転
+*/
+.menu_line03.open {
+  top: -12px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .responsive_btn {
+    display: flex;
+  }
+
+  .header_bg {
+    position: relative;
+    height: auto;
+  }
+
+  .header_nav {
+    background: #323232;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0 0 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: .5s;
+  }
+
+  .header_nav_lists {
+    display: block;
+    text-align: center;
+  }
+
+  .header_nav_lists li {
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  .nav_link {
+    font-size: 20px;
+  }
+
+}
+.menu_active {
+  right: 0;
+}
+
+/*========= 1文字ずつ出現させるためのCSS ===============*/
+
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+/* ページの先頭へ */
+#js-pagetop {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #666;
+  opacity: 80%;
+  color: #fff;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+}
+ 
+#js-pagetop span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+/* 予約と電話のボタンをページ下部に固定*/
+
+#sp-fixed-menu{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  bottom: 0px;
+  font-size: 0;
+  opacity: 0.9;
+  z-index: 99;
+}
+#sp-fixed-menu ul{
+  display: flex;
+  list-style: none;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+#sp-fixed-menu li{
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  padding:0;
+  margin:0;
+  font-size: 14px;
+  border-right: 1px solid #fff;
+}
+
+/*ボタンを調整*/
+#sp-fixed-menu li a{
+  color: #fff;
+  text-align: center;
+  display:block;
+  width: 100%;
+  padding:10px;
+}
+
+/*左側メニューを緑色に*/
+#sp-fixed-menu li:first-child{
+  background: #38b435;
+}
+
+#sp-fixed-menu li:nth-of-type(2) a {
+  color: #000;
+  background: #fff;
+}
+
+/*左側メニューをオレンジ色に*/
+#sp-fixed-menu li:last-child{
+  background: #ff2600;
+}
+
+.bottomIcon {
+  width: 8%;
+  margin: 0 auto;
+}
+
+.iconCaption{
+  font-size: 60%;
+  margin: 4px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  p , .dinnerMenu .menuNote {
+    font-size: 80%;
+  }
+
+  .mainSection {
+    margin: 0 0 12% 0;
+  }
+
+  .dinnerMenu {
+    width: 100%;
+  }
+
+  .siteName {
+    font-size: 60%;
+  }
+  .sliderPC {
+    display: none;
+  }
+  .sliderSP {
+    display: block;
+  }
+
+  .bottomIcon {
+    width: 30%;
+  }
+
+}
