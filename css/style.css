@@ -72,7 +72,9 @@ img {
   line-height: clamp(14px , 9vw , 72px);
   color: #fff;
 }
-
+rt{
+  margin-bottom: 0;
+}
 
 /* フッター */
 footer {
