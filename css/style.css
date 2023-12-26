@@ -686,7 +686,10 @@ a.nav_link {
   p , .dinnerMenu .menuNote {
     font-size: 80%;
   }
-
+.logo {
+  margin: 2% 4%;
+  width: 50%;
+}
   .mainSection {
     margin: 0 0 12% 0;
   }
