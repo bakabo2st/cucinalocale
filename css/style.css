@@ -14,14 +14,14 @@ html {
 header {
   display: flex;
   align-items: center;
-  padding: 2% 2%;
+  padding: 0 2%;
   background: #fff;
   position: relative;
 }
 
 /* ロゴ回り */
 .logo {
-  margin: 2% 4%;
+  margin: 0 4%;
   width: 45%;
 }
 
@@ -693,6 +693,10 @@ a.nav_link {
   p , .dinnerMenu .menuNote {
     font-size: 80%;
   }
+
+  header {
+  padding: 2% 2%;
+}
 .logo {
   margin: 2% 4%;
   width: 65%;
