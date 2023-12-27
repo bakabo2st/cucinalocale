@@ -71,6 +71,7 @@ img {
   font-size: clamp(10px , 6vw , 60px);
   line-height: clamp(14px , 9vw , 72px);
   color: #fff;
+  text-shadow: 1px 1px 2px black;
 }
 rt{
   line-height: 0.8em;
