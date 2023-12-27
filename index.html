@@ -48,11 +48,11 @@
 </script>
     <meta name="description" content="CUCINA LOCALE（クッチーナロカレ）は神戸垂水にある隠れ家のようなイタリアンバル、レストラン。ブロードにこだわった無添加イタリアンで味わう厳選ワインとおだやかな時間をお楽しみ下さい。">
     <meta property="og:title" content="お店のご紹介" />
-    <meta property="og:description" content="神戸垂水にあるクッチーナロカレは隠れ家のようなイタリアンバル、レストラン。ブロードにこだわった無添加イタリアンで味わう厳選ワインとおだやかな時間をお楽しみ下さい。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cucinalocale.com/" />
-    <meta property="og:image" content="https://www.cucinalocale.com/images/logoYoko01.svg" />
-    <meta property="og:site_name" content="神戸垂水のイタリアンバルCUCINA LOCALE（クッチーナロカレ）" />
+    <meta property="og:description" content="神戸垂水にあるクッチーナロカレは隠れ家のようなイタリアンバル、レストラン。ブロードにこだわった無添加イタリアンで味わう厳選ワインとおだやかな時間をお楽しみ下さい。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cucinalocale.com/">
+    <meta property="og:image" content="https://www.cucinalocale.com/images/logoYoko01.svg">
+    <meta property="og:site_name" content="神戸垂水のイタリアンバルCUCINA LOCALE（クッチーナロカレ）">
     <meta property="og:locale" content="ja_JP"  />
     <link rel="icon" href="favicon.ico" type="image/png">
     <link rel="canonical" href="http://cucinalocale.com">
@@ -439,6 +439,22 @@
     </script>
     <script>
       $(function() {
+        $('.text').slick({
+        accessibility: false,
+        arrows: false,
+          slidesToShow: 3,
+          fade: true,
+          asNavFor: '.slider',
+          responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '20%',// 両端の見切れるスライド幅
+            }
+          },
+        ]
+      });
       $('.slider').slick({
         autoplay: true,
         dots: true,
@@ -480,13 +496,6 @@
             }
           },
         ]
-      });
-      $('.text').slick({
-        accessibility: false,
-        arrows: false,
-          slidesToShow: 1,
-          fade: true,
-          asNavFor: '.slider',
       });
     });
     </script>
