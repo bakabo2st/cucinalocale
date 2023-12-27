@@ -488,7 +488,7 @@ a.nav_link {
   justify-content: center;
   text-align: center;
   width: 100%;
-  color: #fff;
+  color: #666;
 }
 .nav_link {
   font-size: 80%;
@@ -577,6 +577,9 @@ a.nav_link {
     margin: 0 0 40px;
     text-align: center;
   }
+  .header_nav_lists li a {
+  color: #666;
+}
 
   .nav_link {
     font-size: 20px;
