@@ -47,13 +47,13 @@
 }
 </script>
     <meta name="description" content="CUCINA LOCALE（クッチーナロカレ）は神戸垂水にある隠れ家のようなイタリアンバル、レストラン。ブロードにこだわった無添加イタリアンで味わう厳選ワインとおだやかな時間をお楽しみ下さい。">
-    <meta property="og:title" content="お店のご紹介" />
+    <meta property="og:title" content="お店のご紹介">
     <meta property="og:description" content="神戸垂水にあるクッチーナロカレは隠れ家のようなイタリアンバル、レストラン。ブロードにこだわった無添加イタリアンで味わう厳選ワインとおだやかな時間をお楽しみ下さい。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cucinalocale.com/">
     <meta property="og:image" content="https://www.cucinalocale.com/images/logoYoko01.svg">
     <meta property="og:site_name" content="神戸垂水のイタリアンバルCUCINA LOCALE（クッチーナロカレ）">
-    <meta property="og:locale" content="ja_JP"  />
+    <meta property="og:locale" content="ja_JP">
     <link rel="icon" href="favicon.ico" type="image/png">
     <link rel="canonical" href="http://cucinalocale.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,6 +78,7 @@
             <li class="navList"><a class="nav_link" href="./index.html">トップ</a></li>
             <li class="navList"><a class="nav_link" href="./dinner.html">ディナー</a></li>
             <li class="navList"><a class="nav_link" href="./wine.html">ワイン</a></li>
+            <li class="navList"><a class="nav_link" href="./drink.html">ドリンク</a></li>
             <li class="navList"><a class="nav_link" href="./index.html#course">コース</a></li>
             <li class="navList"><a class="nav_link" href="./index.html#lunch">ランチ</a></li>
             <li class="navList"><a class="nav_link" href="./index.html#shop">店内の<br>ご紹介</a></li>
@@ -155,7 +156,7 @@
           お勧めのお料理
         </h2>
         <div class="recommendMenu">
-          <ul class="slider">
+          <ul class="synchro-slider" id="slider1">
             <!-- おすすめ01 --><li class="horizontalImage"><img src="./images/5asort.png" alt="前菜5種盛り合わせ"></li>
             <!-- おすすめ02 --><li class="horizontalImage"><img src="./images/carpaccio.png" alt="本日のカルパッチョ"></li>
             <!-- おすすめ03 --><li class="horizontalImage"><img src="./images/meat.png" alt="黒毛和牛すね肉の赤ワイン煮込み"></li>
@@ -164,7 +165,7 @@
             <!-- おすすめ06 --><li class="horizontalImage"><img src="./images/bagna.png" alt="低温調理野菜のクリーミーバーニャカウダ"></li>
             <!-- おすすめ07 --><li class="horizontalImage"><img src="./images/ragout.png" alt="鴨肉とポルチーニ茸のラグーソース"></li>
           </ul>
-          <ul class="text">
+          <ul class="synchro-slider-nav" id="slider1-nav">
             <!-- おすすめ01 -->
             <li class="itemRecommend">
               <div class="recommendMenu">
@@ -260,13 +261,28 @@
               シェアコース…￥3,850
             </h3>
             <p class="letterBody fadeUpTrigger">
-              <strong>メインとパスタは<br>
-              当日お選びになれます</strong><br>
-              その日おすすめの前菜や、ご好評をいただいております朝網の魚介を使ったカルパッチョ、選べるこだわりのパスタやメインのお料理とデザートのコース。事前にご予約くださいませ。 パスタ、メインは当日お選びになれます。
+              前菜5種盛り合わせに、当店人気のバーニャカウダ、選べるパスタ、選べるメイン料理がついたお得なコースです。 お一人様別途550円(人数様分)で、メインのお料理を両方お付け出来ます。 <br>
+              <strong>※こちらのコースは大皿でのご提供となります。</strong>
             </p>
             <h3 class="headingSub fadeUpTrigger">
-              シェフのお任せ特選コース
+              シェフのお任せ特選コース…￥5500
             </h3>
+            <p class="letterBody fadeUpTrigger">
+              選食材を使った特別なコースです。<br>
+              こちらのコースは1人一皿でのご提供となります。<br>
+              恋人、ご家族、会食等、大切な方と素敵な時間を過ごしませんか？<br>
+            </p>
+            <h4 class="letterBody">コース内容</h4>
+            <ul class="letterBody fadeUpTrigger">
+              <li>本日のカルパッチョミスト</li>
+              <li>天然酵母のバケット</li>
+              <li>本日のスープ</li>
+              <li>本日のパスタ</li>
+              <li>天然真鯛と手長海老のアクアパッツァ</li>
+              <li>黒毛和牛ホホ肉の赤ワイン煮込み~トリュフ風味~</li>
+              <li>デザート</li>
+              <li>コーヒーor紅茶</li>
+            </ul>
             <h3 class="headingSub fadeUpTrigger">
               シーンに合わせた<br>
               コースをご用意いたします
@@ -335,7 +351,7 @@
               隠れ家のような雰囲気の中で、大切なひとと穏やかなひとときをお過ごしください。<br>
               ゆったりとおくつろぎいただくため、お席の間隔を広くとっております。また、店内奥のお席は落ち着いた照明に、手前のお席は明るめに致しております。TPOに合わせてお使いください。
             </p>
-            <ul class="slider">
+            <ul class="shopSlider">
               <!-- 店内01 --><li class="horizontalImage"><img src="./images/shop01.webp" alt="クッチーロカレカウンター"></li>
               <!-- 店内02 --><li class="horizontalImage"><img src="./images/shop02.webp" alt="クッチーロカレテーブル"></li>
               <!-- 店内03 --><li class="horizontalImage"><img src="./images/shop03.webp" alt="クッチーロカレテーブル"></li>
@@ -442,49 +458,36 @@
       });
     </script>
     <script>
-      $(function() {
-      $('.slider').slick({
-        autoplay: true,
-        dots: true,
-        accessibility: true,
-        centerMode: true,// 前後スライドを部分表示
-        centerPadding: '8%',// 両端の見切れるスライド幅
-        lazyLoad:'ondemand', /* スライドするとすぐに画像を読み込む */
-        ScrollToSlides: 1, /* スマホでのスワイプやマウスでのドラッグ操作で1枚ずつスライドする */
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        asNavFor: '.text',
-        slidesToShow: 3,
-        waitForAnimate: false,
-        responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              centerPadding: '20%',// 両端の見切れるスライド幅
-            }
-          },
-        ]
-      });
-      $('.text').slick({
-        accessibility: true,
-        arrows: false,
-          slidesToShow: 3,
-          fade: true,
-          asNavFor: '.slider',
-          responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              centerPadding: '20%',// 両端の見切れるスライド幅
-            }
-          },
-        ]
-      });
+      /*
+    $(function() {
+  $('.slider').slick({
+    autoplay: true,
+    dots: true,
+    centerMode: true,
+    slidesToShow: 3,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    asNavFor: '.text',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: 0,
+        fade: true
       }
-      $(function() {
-      $('.topSlider').slick({
+    }]
+  });
+  $('.text').slick({
+      slidesToShow: 1,
+      fade: true,
+      asNavFor: '.slider',
+      arrows: false
+  });
+});*/
+      
+      (function($) {
+  "use strict";
+  $('.topSlider').slick({
         autoplay: true,
         dots: true,
         accessibility: true,
@@ -495,7 +498,7 @@
         slidesToShow: 1,
         responsive: [
           {
-            breakpoint: 480,
+            breakpoint: 784,
             settings: {
               slidesToShow: 1,
               centerPadding: '20%',// 両端の見切れるスライド幅
@@ -503,7 +506,60 @@
           },
         ]
       });
-    };
+      $('.shopSlider').slick({
+        autoplay: true,
+        dots: true,
+        accessibility: true,
+        centerMode: true,
+        lazyLoad:'ondemand', /* スライドするとすぐに画像を読み込む */
+        ScrollToSlides: 1, /* スマホでのスワイプやマウスでのドラッグ操作で1枚ずつスライドする */
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 784,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '20%',// 両端の見切れるスライド幅
+            }
+          },
+        ]
+      });
+  //連動するスライダーをぞれぞれ指定する必要があるためeachで回す
+    $(".synchro-slider").each(function() {
+     $(this).slick({
+      autoplay: true,
+      dots: true,
+      centerMode: true,
+      accessibility: true,
+      lazyLoad:'ondemand', /* スライドするとすぐに画像を読み込む */
+      ScrollToSlides: 1, /* スマホでのスワイプやマウスでのドラッグ操作で1枚ずつスライドする */
+      slidesToShow: 3,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      asNavFor: "#" + $(this).attr("id") + "-nav",
+      responsive: [
+          {
+            breakpoint: 784,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '20%',// 両端の見切れるスライド幅
+            }
+          },
+        ]
+    });
+  });
+
+  $(".synchro-slider-nav").each(function() {
+    $(this).slick({
+      autoplay: true,
+      arrows: false,
+      asNavFor:
+        "#" + $(this).attr("id").replace("-nav", "")
+    });
+  });
+})(jQuery);
     </script>
     <script>
       // 動きのきっかけとなるアニメーションの名前を定義
