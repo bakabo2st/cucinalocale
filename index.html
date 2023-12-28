@@ -443,22 +443,6 @@
     </script>
     <script>
       $(function() {
-        $('.text').slick({
-        accessibility: true,
-        arrows: false,
-          slidesToShow: 3,
-          fade: true,
-          asNavFor: '.slider',
-          responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              centerPadding: '20%',// 両端の見切れるスライド幅
-            }
-          },
-        ]
-      });
       $('.slider').slick({
         autoplay: true,
         dots: true,
@@ -473,6 +457,22 @@
         slidesToShow: 3,
         waitForAnimate: false,
         responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '20%',// 両端の見切れるスライド幅
+            }
+          },
+        ]
+      });
+                $('.text').slick({
+        accessibility: true,
+        arrows: false,
+          slidesToShow: 3,
+          fade: true,
+          asNavFor: '.slider',
+          responsive: [
           {
             breakpoint: 480,
             settings: {
