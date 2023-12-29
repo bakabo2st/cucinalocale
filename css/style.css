@@ -518,7 +518,7 @@ a.nav_link {
 .menu_line01 , .menu_line02 , .menu_line03 {
   position: relative;
   background: #666;
-  border-radius: 5px;
+  border-radius: 9px;
   width: 100%;
   height: 5px;
   margin: 4px 0;
