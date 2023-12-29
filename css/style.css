@@ -530,7 +530,7 @@ a.nav_link {
 */
 .menu_line01.open {
   transform: rotate(45deg);
-  top: 9px;
+  top: 12px;
 }
 /*
   ハンバーガーメニューがクリックされたら
