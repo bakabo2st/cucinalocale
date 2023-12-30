@@ -119,6 +119,9 @@ a {
   color: #fff;
 }
 
+a.telLink {
+  color: #ff5c5c;
+}
 
 
 /* 全体の囲み */
